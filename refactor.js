@@ -23,13 +23,16 @@
 // to a variable containing an anonymous
 // function
 
-var random = doSomethingCool() {
+function doSomethingCool() {
   console.log("Something Cool!");
 }
 
+
 // Put your answer below -------------------------
 
-
+var random = function() {
+  console.log("Something Cool!");
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -40,34 +43,30 @@ var random = doSomethingCool() {
 // Here we are using setTimeout to call a function
 // after 2 seconds. Refactor to use an anonymous
 // function
-
 function sayHi() {
   alert("Hello, World!");
 }
 
 setTimeout(sayHi, 2000);
+function sayHi() {
+  alert("Hello, World!");
+}
 
-// Put your answer below -------------------------
+setTimeout(sayHi, 2000);
+ar letter = "x";
 
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
 
-// -----------------------------------------------
+letter = "z";
+console.log("The letter is", letter);function sayHi() {
+  alert("Hello, World!");
+}
 
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-// 3. --------------------------------------------
-
-// The code below will log the letter twice. What
-// is the order that will be logged?
-
-// [a]: x then y then z
-// [b]: y then z
-// [c]: z then y
-// [d]: x then z
-
-// Please explain your answer.
-
-var letter = "x";
+setTimeout(sayHi, 2000);
+ar letter = "x";
 
 setTimeout(function(){
   letter = "y";
@@ -76,21 +75,26 @@ setTimeout(function(){
 
 letter = "z";
 console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};function sayHi() {
+  alert("Hello, World!");
+}
 
-// Put your answer below -------------------------
+setTimeout(sayHi, 2000);
+ar letter = "x";
 
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
 
-// -----------------------------------------------
-
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-// 4. --------------------------------------------
-
-// The function below reverses a string. The body
-// of the function is 5 lines of code. Refactor
-// this function to do the same thing with 1 line
-
+letter = "z";
+console.log("The letter is", letter);
 var reverseStr = function(str) {
   var arr;
   arr = str.split("");
@@ -98,23 +102,6 @@ var reverseStr = function(str) {
   str = arr.join("");
   return str;
 };
-
-// Put your answer below -------------------------
- var reverseTheStr = function(str){}
-
-// -----------------------------------------------
-
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-// 5. --------------------------------------------
-
-// The function below takes the spanish word for
-// the colors red, white, blue, green, and black
-// and returns the hex code for that color.
-// Refactor this function to use an object
-// instead of an if/else statement.
-
 var spanishColor = function(colorName) {
   if (colorName.toLowerCase() === "rojo") {
     return "#ff0000";
@@ -133,6 +120,235 @@ var spanishColor = function(colorName) {
   }
 };
 
+// Put your answer below -------------------------
+var sayHi = function() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 3. --------------------------------------------
+
+// The code below will log the letter twice. What
+// is the order that will be logged?
+
+// [a]: x then y then z
+// [b]: y then z
+// [c]: z then y
+// [d]: x then z
+
+// Please explain your answer.
+
+function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};
+var spanishColor = function(colorName) {
+  if (colorName.toLowerCase() === "rojo") {
+    return "#ff0000";
+  }
+  else if (colorName.toLowerCase() === "blanco") {
+    return "#ffffff";
+  }
+  else if (colorName.toLowerCase() === "azul") {
+    return "#0000ff";
+  }
+  else if (colorName.toLowerCase() === "verde") {
+    return "#00ff00";
+  }
+  else if (colorName.toLowerCase() === "negro") {
+    return "#000000";
+  }
+};
+
+// Put your answer below -------------------------
+
+z then y, letter is re-declared with the letter z
+'erasing x' all though y is coded first there is a
+timeout on the function causing z to print first.
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 4. --------------------------------------------
+
+// The function below reverses a string. The body
+// of the function is 5 lines of code. Refactor
+// this function to do the same thing with 1 line
+
+function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};
+var spanishColor = function(colorName) {
+  if (colorName.toLowerCase() === "rojo") {
+    return "#ff0000";
+  }
+  else if (colorName.toLowerCase() === "blanco") {
+    return "#ffffff";
+  }
+  else if (colorName.toLowerCase() === "azul") {
+    return "#0000ff";
+  }
+  else if (colorName.toLowerCase() === "verde") {
+    return "#00ff00";
+  }
+  else if (colorName.toLowerCase() === "negro") {
+    return "#000000";
+  }
+};
+
+// Put your answer below -------------------------
+ var reverseTheStr = function(str){
+   return var arr = str.split("").arr.reverse().arr.join("");
+ }
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 5. --------------------------------------------
+
+// The function below takes the spanish word for
+// the colors red, white, blue, green, and black
+// and returns the hex code for that color.
+// Refactor this function to use an object
+// instead of an if/else statement.
+
+function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+ar letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};
+var spanishColor = function(colorName) {
+  if (colorName.toLowerCase() === "rojo") {
+    return "#ff0000";
+  }
+  else if (colorName.toLowerCase() === "blanco") {
+    return "#ffffff";
+  }
+  else if (colorName.toLowerCase() === "azul") {
+    return "#0000ff";
+  }
+  else if (colorName.toLowerCase() === "verde") {
+    return "#00ff00";
+  }
+  else if (colorName.toLowerCase() === "negro") {
+    return "#000000";
+  }
+};
+// Put your answer below -------------------------
+
 function spanishColorUsingObject(spanishColorName){
 var colorObject = {
   rojo: '#ff0000',
@@ -143,10 +359,6 @@ var colorObject = {
 };
 return colorObject{spanishColorName.toLowerCase()};
 }
-
-// Put your answer below -------------------------
-
-
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -162,7 +374,8 @@ return colorObject{spanishColorName.toLowerCase()};
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -213,6 +426,24 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+var keepScore = function(score){
+  var scoreCount = 0;
+
+    var increaseScore = function() {
+      score++
+    };
+
+    var decreaseScore = function() {
+      score--
+    };
+
+    if(score === '-'){
+          decreaseScore();
+        }
+          increaseScore();
+
+  return scoreCount;
+}
 
 // -----------------------------------------------
 
@@ -234,6 +465,11 @@ var twoPlusTwo = addNumbers(2,2);
 // Put your answer below -------------------------
 
 
+var addNumbers = function(numberA, numberB) {
+  return console.log(numberA + numberB);
+};
+
+var twoPlusTwo = addNumbers(2,2);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -254,11 +490,20 @@ var twoPlusTwo = addNumbers(2,2);
 var speed = 0;
 
 var accelerate = function(amount) {
+  if(!amount){
+    speed += 1;
+  }
   speed += amount;
 };
 
 // Put your answer below -------------------------
-
+//Thanks for the help Nathan.
+var accelerate = function(amount) {
+  if(!amount){
+    speed = 1;
+  }
+  speed += amount;
+};
 
 // -----------------------------------------------
 
@@ -301,15 +546,20 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
-var students = ['damon','phillip','winston','amanda','caleb','geoff','gabe','logan','riggan','david'];
-function studentGenerator(studentList){
-  var randomNum = Math.random();
-  var numOfStudents = studentList.length;
-  var guessNumber = Math.floor(randomNum * numOfStudents);
-  return studentList[Math.floor];
-}
 
-studentGenerator(students);
+
+/***random student generator******************/
+// var students = ['damon','phillip','winston','amanda','caleb','geoff','gabe','logan','riggan','david'];
+// function studentGenerator(studentList){
+//   var randomNum = Math.random();
+//   var numOfStudents = studentList.length;
+//   var guessNumber = Math.floor(randomNum * numOfStudents);
+//   return studentList[Math.floor];
+// }
+
+//  studentGenerator(students);
+// *****************************************/
+//
 
 // -----------------------------------------------
 

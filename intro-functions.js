@@ -103,18 +103,22 @@ console.assert(isVowel("E") === true);
  function rovarspraket(text) {
      // YOUR CODE HERE
      var vowels = ['a','e','i','o','u'];
-     var rovar;
+     var rovar = '';
      if (typeof text === 'number') {
-         return rovar = text;
+         return text.toString();
      }
-     for (i = 0; i <= text.length(); i++) {
-         var str = text(i);
-         if (vowel.indexOf(str.toLowerCase()) !== -1) {
-             rov = rov.concat(str);
+     for (i = 0; i < text.length; i++) {
+         var str = text.split("");
+        // console.log("THIS IS STR", str)
+      //   console.log("THIS IS STR[i]", str[i])
+         var checkCase = str[i].toLowerCase();
+         if (vowels.indexOf(checkCase) !== -1) {
+             rovar = rovar.concat(str[i]);
          } else {
-             rov = rov.concat(str + 0 + str);
+             rovar = rovar.concat(str[i] + 'o' + str[i]);
          }
      }
+     return rovar;
  }
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
@@ -148,6 +152,14 @@ console.assert(reverse("we don't want no trouble") ===
 
 function findLongestWord(sentence) {
     // YOUR CODE HERE
+    var words = sentence.replace("'","").split(" ");
+    var longestWord = '';
+    for(i = 0; i < words.length; i++){
+      if(words[i].length > longestWord.length){
+        longestWord = words[i];
+      }
+    }
+    return longestWord;
 }
 console.assert(findLongestWord("book dogs") === "book")
 console.assert(findLongestWord("don't mess with Texas") === "Texas")
