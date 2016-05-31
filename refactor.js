@@ -161,61 +161,6 @@ console.log("The letter is", letter);function sayHi() {
   alert("Hello, World!");
 }
 
-setTimeout(sayHi, 2000);
-ar letter = "x";
-
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};function sayHi() {
-  alert("Hello, World!");
-}
-
-setTimeout(sayHi, 2000);
-ar letter = "x";
-
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
-var spanishColor = function(colorName) {
-  if (colorName.toLowerCase() === "rojo") {
-    return "#ff0000";
-  }
-  else if (colorName.toLowerCase() === "blanco") {
-    return "#ffffff";
-  }
-  else if (colorName.toLowerCase() === "azul") {
-    return "#0000ff";
-  }
-  else if (colorName.toLowerCase() === "verde") {
-    return "#00ff00";
-  }
-  else if (colorName.toLowerCase() === "negro") {
-    return "#000000";
-  }
-};
-
 // Put your answer below -------------------------
 
 z then y, letter is re-declared with the letter z
@@ -233,63 +178,14 @@ timeout on the function causing z to print first.
 // of the function is 5 lines of code. Refactor
 // this function to do the same thing with 1 line
 
-function sayHi() {
-  alert("Hello, World!");
-}
 
-setTimeout(sayHi, 2000);
-ar letter = "x";
 
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
 var reverseStr = function(str) {
   var arr;
   arr = str.split("");
   arr = arr.reverse();
   str = arr.join("");
   return str;
-};function sayHi() {
-  alert("Hello, World!");
-}
-
-setTimeout(sayHi, 2000);
-ar letter = "x";
-
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
-var spanishColor = function(colorName) {
-  if (colorName.toLowerCase() === "rojo") {
-    return "#ff0000";
-  }
-  else if (colorName.toLowerCase() === "blanco") {
-    return "#ffffff";
-  }
-  else if (colorName.toLowerCase() === "azul") {
-    return "#0000ff";
-  }
-  else if (colorName.toLowerCase() === "verde") {
-    return "#00ff00";
-  }
-  else if (colorName.toLowerCase() === "negro") {
-    return "#000000";
-  }
 };
 
 // Put your answer below -------------------------
@@ -309,27 +205,6 @@ var spanishColor = function(colorName) {
 // Refactor this function to use an object
 // instead of an if/else statement.
 
-function sayHi() {
-  alert("Hello, World!");
-}
-
-setTimeout(sayHi, 2000);
-ar letter = "x";
-
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
 var spanishColor = function(colorName) {
   if (colorName.toLowerCase() === "rojo") {
     return "#ff0000";
